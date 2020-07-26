@@ -4,4 +4,4 @@ bases:
 resources:
 - ./namespace.yaml
 
-nameSuffix: -custA
+nameSuffix: -cust001
