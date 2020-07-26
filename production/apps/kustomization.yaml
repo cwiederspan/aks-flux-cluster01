@@ -4,4 +4,6 @@ bases:
 resources:
 - ./namespace.yaml
 
+namespace: customer-cust001
+
 nameSuffix: -cust001
