@@ -1,2 +1,3 @@
-# aks-flux-cluster01
-A FluxCD configuration for a demo cluster
+# Kubernetes Flux Testing Repo
+
+A FluxCD configuration for a demo cluster running on AKS.
