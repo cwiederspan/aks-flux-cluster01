@@ -4,6 +4,6 @@ bases:
 resources:
 - ./namespace.yaml
 
-namespace: customer-cust001
+namespace: svcdisc-cust001
 
 nameSuffix: -cust001
