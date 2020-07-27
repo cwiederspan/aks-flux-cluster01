@@ -1,0 +1,9 @@
+bases:
+- ../../../bases/apps/svcdisc/
+
+resources:
+- ./namespace.yaml
+
+namespace: svcdisc-cust002
+
+nameSuffix: -cust002
