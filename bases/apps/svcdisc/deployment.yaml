@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: svcdisc1
+  name: svcdisc
   labels:
-    app: svcdisc1
+    app: svcdisc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: svcdisc1
+      app: svcdisc
   template:
     metadata:
       labels:
-        app: svcdisc1
+        app: svcdisc
     spec:
       containers:
-      - name: svcdiscpo1
+      - name: svcdiscpod
         image: cwiederspan/akssvcdisc:691ccf156abc880da78e9e4cf061f05fe431907d
         ports:
         - containerPort: 80
@@ -26,9 +26,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: svcdiscsvc1
+  name: svcdiscsvc
 spec:
   selector:
-    app: svcdisc1
+    app: svcdisc
   ports:
     - port: 80
