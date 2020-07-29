@@ -6,4 +6,5 @@ resources:
 
 namespace: svcdisc-cust001
 
-nameSuffix: -cust001
+patchesStrategicMerge:
+- patch.yaml

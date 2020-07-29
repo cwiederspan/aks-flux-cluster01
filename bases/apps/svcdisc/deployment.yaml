@@ -19,9 +19,6 @@ spec:
         image: cwiederspan/akssvcdisc:691ccf156abc880da78e9e4cf061f05fe431907d
         ports:
         - containerPort: 80
-        env:
-        - name: "IDENTIFIER"
-          value: "Service #1"
 ---
 apiVersion: v1
 kind: Service
