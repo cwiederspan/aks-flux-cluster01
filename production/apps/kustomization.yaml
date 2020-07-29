@@ -1,3 +1,6 @@
 bases:
 - ./cust001/
 - ./cust002/
+
+resources:
+  - ./acrpulltest/deployment.yaml

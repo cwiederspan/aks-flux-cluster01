@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: acrpulltest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acrpulltest
+  namespace: acrpulltest
+  labels:
+    app: acrpulltest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: acrpulltest
+  template:
+    metadata:
+      labels:
+        app: acrpulltest
+    spec:
+      containers:
+      - name: acrpulltestpod
+        image: cdwms.azurecr.io/samples/helloworldpythonapp:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: acrpulltestsvc
+  namespace: acrpulltest
+spec:
+  selector:
+    app: acrpulltest
+  ports:
+    - port: 80
