@@ -1,3 +1,4 @@
 resources:
   - namespace.yaml
+  - redis.yaml
   - deployment.yaml
