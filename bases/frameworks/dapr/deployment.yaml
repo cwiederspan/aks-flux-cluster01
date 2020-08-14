@@ -1,0 +1,16 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: dapr
+  namespace: dapr-system
+spec:
+  releaseName: dapr
+  targetNamespace: dapr-system
+  chart:
+    repository: https://daprio.azurecr.io/helm/v1/repo
+    name: dapr
+    version: 0.4.3
+  timeout: 300
+  resetValues: false
+  wait: false
+  forceUpgrade: false
