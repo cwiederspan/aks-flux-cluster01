@@ -1,0 +1,16 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: azoperator
+  namespace: azure-operator
+spec:
+  releaseName: azoperator
+  targetNamespace: azure-operator
+  chart:
+    git: git@github.com:Azure/azure-service-operator
+    ref: master
+    path: charts/azure-service-operator
+  timeout: 300
+  resetValues: false
+  wait: false
+  forceUpgrade: false
