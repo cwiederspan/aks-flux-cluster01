@@ -1,3 +1,4 @@
 bases:
 - ../../bases/meshes/linkerd/
 - ../../bases/frameworks/dapr/
+- ../../bases/operators/azure/
