@@ -14,3 +14,12 @@ spec:
   resetValues: false
   wait: false
   forceUpgrade: false
+  values:
+    image:
+      repository: mcr.microsoft.com/k8s/azureserviceoperator:latest
+  valuesFrom:
+    secretKeyRef:
+      name: azure-secrets
+      namespace: azure-resources
+      key: secrets.yaml
+      optional: false
