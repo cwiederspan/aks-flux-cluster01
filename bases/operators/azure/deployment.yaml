@@ -7,7 +7,7 @@ spec:
   releaseName: azoperator
   targetNamespace: azure-operator
   chart:
-    git: git@github.com:Azure/azure-service-operator
+    git: https://github.com/Azure/azure-service-operator
     ref: master
     path: charts/azure-service-operator
   timeout: 300
@@ -20,6 +20,6 @@ spec:
   valuesFrom:
   - secretKeyRef:
       name: azure-secrets
-      namespace: azure-resources
+      namespace: azure-operator
       key: secrets.yaml
       optional: false
