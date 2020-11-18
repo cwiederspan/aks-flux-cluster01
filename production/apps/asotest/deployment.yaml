@@ -1,0 +1,6 @@
+apiVersion: azure.microsoft.com/v1alpha1
+kind: ResourceGroup
+metadata:
+  name: cdw-asotestrg-20201117
+spec:
+  location: "westus2"
