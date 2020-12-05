@@ -1,4 +1,4 @@
-namespace: redis-sample
+namespace: redis-system
 
 resources:
 - namespace.yaml
