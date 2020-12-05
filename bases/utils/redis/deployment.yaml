@@ -1,16 +1,9 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: redis-system
----
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: redis
-  namespace: redis-system
 spec:
   releaseName: redis
-  targetNamespace: redis-system
   chart:
     repository: https://charts.bitnami.com/bitnami
     name: redis

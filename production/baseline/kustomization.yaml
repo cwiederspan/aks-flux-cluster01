@@ -1,5 +1,6 @@
 bases:
 - ../../bases/meshes/linkerd/
+- ../../bases/utils/redis/
 - ../../bases/frameworks/dapr/
 - ../../bases/operators/azure/
 - ../../bases/apim-gateway/
