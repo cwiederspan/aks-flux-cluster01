@@ -1,5 +1,5 @@
-namespace: redis-system
+#namespace: redis-system
 
 resources:
-- namespace.yaml
+#- namespace.yaml
 - deployment.yaml
