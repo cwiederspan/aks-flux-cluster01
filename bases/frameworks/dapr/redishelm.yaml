@@ -1,0 +1,19 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: redis
+  namespace: redis-system
+spec:
+  releaseName: redis
+  targetNamespace: redis-system
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: redis
+  values:
+    usePassword: false
+    master:
+      service:
+        type: ClusterIP
+        port: 6379
+    cluster:
+      enabled: false
