@@ -5,6 +5,6 @@ metadata:
 spec:
   releaseName: nginx
   chart:
-    repository: https://helm.nginx.com/nginx-stable
+    repository: https://helm.nginx.com/stable
     name: nginx-ingress
-    version: 0.7.1
+    version: 1.9.1
