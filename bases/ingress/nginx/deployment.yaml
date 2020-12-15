@@ -6,7 +6,7 @@ spec:
   releaseName: nginx
   chart:
     repository: https://helm.nginx.com/stable
-    name: nginx-stable
+    name: nginx-ingress
   values:
     controller:
       image:
