@@ -7,7 +7,6 @@ spec:
   chart:
     repository: https://helm.nginx.com/stable
     name: nginx-stable
-    version: 0.7.1
   values:
     controller:
       image:
