@@ -1,4 +1,5 @@
 bases:
+- ../../bases/ingress/nginx/
 - ../../bases/meshes/linkerd/
 - ../../bases/utils/redis/
 - ../../bases/frameworks/dapr/

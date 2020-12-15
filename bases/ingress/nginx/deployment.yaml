@@ -1,0 +1,14 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: nginx
+spec:
+  releaseName: nginx
+  chart:
+    repository: https://helm.nginx.com/stable
+    name: nginx-stable
+    version: 0.7.1
+  values:
+    controller:
+      image:
+        tag: 1.9.1
