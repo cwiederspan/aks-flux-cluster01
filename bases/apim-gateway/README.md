@@ -30,22 +30,3 @@ kubectl apply -f config.yaml
 > NOTE: The `operator-namespace` must match the value provided in [kustomization.yaml](kustomization.yaml).
 
 ```bash
-# Create
-az k8sconfiguration create \
---name apim-gateway \
---resource-group $NAME \
---cluster-name $NAME \
---cluster-type connectedClusters \
---scope namespace \
---operator-namespace apim-gateway \
---operator-instance-name flux \
---operator-params '--git-readonly --git-branch main --git-path flux/apim-gateway' \
---repository-url https://github.com/cwiederspan/apim-fulldemo-20201111.git
-
-# Delete
-az k8sconfiguration delete \
---name apim-gateway \
---resource-group $NAME \
---cluster-name $NAME \
---cluster-type connectedClusters
-```
