@@ -1,7 +1,7 @@
 bases:
-- ../../bases/ingress/nginx/
-- ../../bases/meshes/linkerd/
 - ../../bases/utils/redis/
-- ../../bases/frameworks/dapr/
-- ../../bases/operators/azure/
+- ../../bases/ingress/nginx/
 - ../../bases/apim-gateway/
+- ../../bases/operators/azure/
+- ../../bases/frameworks/dapr/
+- ../../bases/meshes/linkerd/
