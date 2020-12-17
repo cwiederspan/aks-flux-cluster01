@@ -21,4 +21,16 @@ kubectl apply -f config.yaml
 
 > NOTE: The `operator-namespace` must match the value provided in [kustomization.yaml](kustomization.yaml).
 
+## Test the APIM Self-hosted Gateway
+
 ```bash
+
+# Get the IP address of the API Management service
+kubectl get svc -n apim-system
+
+# Add some values and test
+curl -k \
+-H "Ocp-Apim-Subscription-Key: XXXXX" \
+https://<YOUR_APIM_SVC_IP>/svcdisc/data
+
+```
