@@ -4,4 +4,4 @@ bases:
 - ../../bases/apim-gateway/
 - ../../bases/operators/azure/
 - ../../bases/frameworks/dapr/
-- ../../bases/meshes/linkerd/
+# - ../../bases/meshes/linkerd/
