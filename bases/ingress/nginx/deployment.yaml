@@ -9,10 +9,7 @@ spec:
     name: nginx-ingress
     version: 0.7.1
   values:
-    service:
-      annotations:
-        service.beta.kubernetes.io/azure-dns-label-name: cdwnginxingress
     controller:
       service:
         annotations:
-          service.beta.kubernetes.io/azure-dns-label-name: cdwnginxingress2
+          service.beta.kubernetes.io/azure-dns-label-name: cdwnginxingress

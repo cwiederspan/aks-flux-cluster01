@@ -6,3 +6,4 @@ bases:
 resources:
   - ./acrpulltest/deployment.yaml
   - ./asotest/deployment.yaml
+  - ./ingresstest/deployment.yaml
