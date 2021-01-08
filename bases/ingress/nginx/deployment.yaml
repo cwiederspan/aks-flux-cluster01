@@ -12,3 +12,7 @@ spec:
     service:
       annotations:
         service.beta.kubernetes.io/azure-dns-label-name: cdwnginxingress
+    controller:
+      service:
+        annotations:
+          service.beta.kubernetes.io/azure-dns-label-name: cdwnginxingress2
